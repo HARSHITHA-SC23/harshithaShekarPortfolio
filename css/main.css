@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+}
+
+/* Top bar stylling */
+
+#bg-image {
+    background-image: linear-gradient(to right, #5b2f47, #4d2746, #3b2046, #261b45, #021742);
+}
+
+#top-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#left-header {
+    text-align: left;
+    margin-left: 10%;
+}
+
+#initial-logo {
+    display: inline-block;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+#right-header {
+    text-align: right;
+    margin-right: 10%;
+}
+#menu {
+    text-align: left;
+    margin-right: 10%;
+}
+#header-label {
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 2%;
+}
+
+#menu label {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;;
+    display: block;
+    cursor: pointer;
+    background: url(/assets/menu.svg) no-repeat left center;
+    background-size: 30px;
+    padding: 10px 0 10px 50px;
+}
+input#checkbox {
+    display: none;
+}
+
+
+/* Content stylling */
+.main-content {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 36em;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+#greet {
+    color: #dedede;
+    font-weight: bolder;
+    font-size: 2.4em;
+    letter-spacing: 0.2em;
+}
+#greet-intro {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 6em;
+    letter-spacing: 0.1em;
+}
+#greet-role {
+    color: #dedede;
+    font-weight: bolder;
+    font-size: 2em;
+    letter-spacing: 0.4em;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+    #right-header {
+      grid-template-columns: auto;
+      text-align: left;
+      margin-left: 10%;
+    }
+    #menu {
+        margin-left: 10%;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    #top-bar {
+      grid-template-columns: auto;
+      grid-gap: 20px 50px;
+    }
+    #menu {
+        margin-left: 10%;
+    }
+  }
