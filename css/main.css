@@ -48,6 +48,13 @@ body {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     margin-right: 2%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#header-label:hover {
+    color: #c59bb9;
+    transition: all 0.5s ease-out;
 }
 
 /* Content stylling */
@@ -55,9 +62,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 36em;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns:auto auto auto;
+}
+
+.icons a {
+    color: #ffffff;
+    margin-right: 2em;
+    padding: 0.4rem;
+    font-size: 1em;
+}
+
+.icons a:hover {
+    color: #c59bb9;
+    transition: all 0.5s ease-out;
 }
 
 #greet {
@@ -94,6 +119,7 @@ body {
         grid-template-columns: auto;
         grid-gap: 20px 50px;
     }
+
     .main-content {
         font-size: 70%;
     }
@@ -104,12 +130,14 @@ body {
         grid-template-columns: auto;
         grid-gap: 20px 50px;
     }
+
     #right-header {
         display: grid;
         grid-template-columns: auto;
         text-align: center;
         margin-left: 10%;
     }
+
     .main-content {
         font-size: 70%;
     }
