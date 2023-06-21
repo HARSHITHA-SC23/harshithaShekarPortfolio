@@ -1,5 +1,5 @@
 /* ABOUT CONTAINER STYLLING */
-.about-content {
+#about-content {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   margin-top: 2em;
@@ -127,7 +127,7 @@ h1:after {
 
 /* Responsiveness styling */
 @media only screen and (max-width: 900px) {
-  .about-content {
+  #about-content {
     grid-template-columns: 1fr;
   }
 
