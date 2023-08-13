@@ -1,0 +1,126 @@
+.home {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.intro {
+    height: 100%;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    justify-content: center;
+    /* align-items: center; */
+    font-weight: 900;
+}
+
+.picture {
+    background-color: #C7E9B0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    border-radius: 30%;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 1.5em;
+    margin-right: 50%;
+}
+
+.icons a {
+    color: #000000;
+    margin-right: 2em;
+    padding: 0.1rem;
+    font-size: 1.3em;
+}
+
+.icons a:hover {
+    transition: all 0.5s ease-out;
+    color: #C7E9B0;
+}
+
+.download {
+    text-align: end;
+    margin-right: 25%;
+    margin-top: 5%;
+}
+
+.button {
+    width: 184px;
+    height: 59px;
+    border-radius: 30px;
+    background-color: #C7E9B0;
+    border: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .home {
+        grid-template-columns: auto;
+        align-items: flex-start;
+    }
+
+    .intro {
+        padding-left: 0;
+        height: 90%;
+        justify-content: center;
+        /* padding-top: 2em; */
+        text-align: center;
+    }
+
+    .icons {
+        margin-right: 0;
+    }
+
+    .download {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .picture {
+        display: none;
+    }
+
+    #hi {
+        font-size: 18px !important;
+    }
+
+    #name {
+        font-size: 68px !important;
+    }
+
+    #role {
+        font-size: 26px !important;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+    .picture {
+        display: none;
+    }
+
+    #hi {
+        font-size: 16px !important;
+    }
+
+    #name {
+        font-size: 42px !important;
+    }
+
+    #role {
+        font-size: 19px !important;
+    }
+}
