@@ -11,16 +11,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="qualification.css">
 </head>
 
 <body>
     <section class="topBar" id="responsiveTopBar">
         <div id="leftIcon">H</div>
         <div id="rightMenu">
-            <a href="#experienceSection">EXPERIENCE</a>
-            <a href="#experienceSection">QUALIFICATION</a>
-            <a href="#experienceSection">PROJECT</a>
-            <a href="#experienceSection">CONTACT</a>
+            <a href="#qualificationSection" onclick="topBarResponsive()">QUALIFICATION</a>
+            <a href="#expertiseSection" onclick="topBarResponsive()">EXPERTISE</a>
+            <a href="#experienceSection" onclick="topBarResponsive()">PROJECT</a>
+            <a href="#experienceSection" onclick="topBarResponsive()">CONTACT</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="topBarResponsive()">&#9776;</a>
     </section>
@@ -47,7 +48,7 @@
                 </a>
             </div>
             <div class="download">
-                <a href="assets/HARSHITHA SC.pdf"  target="_blank" Download="Harshitha SC CV">
+                <a href="assets/HARSHITHA SC.pdf" target="_blank" Download="Harshitha SC CV">
                     <button class="button">Download CV</button>
                 </a>
             </div>
@@ -56,11 +57,60 @@
             <img src="assets/HarshithaBgCrop.png" alt="Harshitha SC" class="image" width="410" height="553">
         </div>
     </section>
-    <section class="experience" id="experienceSection">
-        <H1>EXPERIENCE</H1>
+    <section class="qualification" id="qualificationSection">
+        <div class="qualButton">
+            <button id="workButton" onclick="work()" tabindex="0">WORK EXPERIENCE</button>
+            <button id="eduButton" onclick="education()">EDUCATION</button>
+        </div>
+        <div id="workContent">
+            <div id="workLayout">
+                <div id="workSubLayout">
+                    <div id="workLayoutContent"">
+                        <h3>2021-09-Present</h3>
+                        <div class=" vl"></div>
+                        <p>Full Stack Developer I<br />
+                            <span style="color: #323232a2;">NewWave India Technologies LLP</span>
+                        </p>
+                    </div>
+                    <div id="workLayoutContent"">
+                        <h3>2021-05 - 2021-09</h3>
+                        <div class=" vl"></div>
+                        <p><span>Full Stack Web Developer Intern</span><br />
+                            <span style="color: #323232a2;">NewWave India Technologies LLP</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="eduContent">
+            <div id="workLayout">
+                <div id="workSubLayout">
+                    <div id="workLayoutContent"">
+                        <h3>2017-08 - 2021-08</h3>
+                        <div class=" vl"></div>
+                        <p>Information Science and Engineering, BE<br />
+                            <span style="color: #323232a2;">NIE Institute of technology, Mysore, Karnataka</span>
+                        </p>
+                    </div>
+                    <div id="workLayoutContent"">
+                        <h3>2015-07 - 2017-05</h3>
+                        <div class=" vl"></div>
+                        <p><span>PCMC (Science) , Pre-University Course (PUC)</span><br />
+                            <span style="color: #323232a2;">Sadvidya Composite PU College, Mysore, Karnataka</span>
+                        </p>
+                    </div>
+                    <div id="workLayoutContent"">
+                        <h3>2014-07 - 2015-05</h3>
+                        <div class=" vl"></div>
+                        <p><span>SSLC , KSEEB</span><br />
+                            <span style="color: #323232a2;">Sacred Heart English Medium School, Shanivarsanthe,</span>
+                        </p>
+                    </div>
+                </div>
+            </div></div>
     </section>
-    <section class="experience" id="experienceSection">
-        <H1>QUALIFICATION</H1>
+    <section class="expertise" id="expertiseSection">
+        <H1>EXPERTISE</H1>
     </section>
     <section class="experience" id="experienceSection">
         <H1>PROJECT</H1>

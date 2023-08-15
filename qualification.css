@@ -1,0 +1,96 @@
+.qualification {
+    margin-top: 2%;
+    /* min-height: 80vh; */
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: center;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.qualButton {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+#workButton {
+    width: 184px;
+    height: 59px;
+    border-radius: 30px 0 0 30PX;
+    border-right: 1px solid black;
+    background-color: #C7E9B0;
+    border: transparent;
+    justify-self: end;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#eduButton {
+    width: 184px;
+    height: 59px;
+    border-radius: 0 30px 30PX 0;
+    background-color: #C7E9B0;
+    border: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#workContent {
+    display: grid;
+    width: 120vh;
+    margin-top: 5%;
+    justify-self: center;
+}
+
+#eduContent {
+    display: none;
+    width: 120vh;
+    justify-self: center;
+}
+
+.qualification p {
+    font-weight: bolder;
+}
+
+.vl {
+    border-left: 3px solid #63636389;
+    height: auto;
+}
+#workLayout {
+    background-color: #C7E9B0;
+    height: auto;
+    border-radius: 30px;
+}
+#workSubLayout {
+    margin: 5%;
+}
+#workLayoutContent {
+    display: grid; 
+    grid-template-columns:  1.5fr 0.3fr 2fr;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    #workContent, #eduContent {
+        width: 90%;
+    }
+    #workLayoutContent {
+        grid-template-columns: auto;
+        background-color: #C7E9B0;
+        -webkit-box-shadow: 2px 2px 6px #C7E9B0, -2px -2px 6px #C7E9B0;
+          box-shadow: 2px 2px 6px #C7E9B0, -2px -2px 6px #C7E9B0;
+        justify-items: center;
+        margin-bottom: 10%;
+        border-radius: 30px;
+        padding: 1em;
+        text-align: center;
+    }
+    #workSubLayout {
+        margin: 0;
+    }
+    #workLayout {
+        background-color: transparent;
+    }
+}

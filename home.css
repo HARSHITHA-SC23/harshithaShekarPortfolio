@@ -70,6 +70,7 @@
     .home {
         grid-template-columns: auto;
         align-items: flex-start;
+        min-height: 70vh;
     }
 
     .intro {
