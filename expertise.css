@@ -1,0 +1,83 @@
+.expertise {
+  margin-top: 6%;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.skill-content {
+  display: grid;
+}
+
+.skill-details {
+  text-align: center;
+}
+
+#skill-container {
+  display: grid;
+  grid-template-columns: 0.1fr 3fr 0.1fr;
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#skill-set {
+  display: grid;
+  grid-template-columns: repeat(18, auto);
+  grid-column-gap: 3em;
+  width: 100%;
+  max-width: 98%;
+  overflow-x: auto;
+}
+
+#skill-set::-webkit-scrollbar {
+  display: none;
+}
+
+#skill-logo {
+  width: 4em;
+  height: 4em;
+}
+
+#skill-logo:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#slideLeft,
+#slideRight {
+  background-color: transparent;
+  border: none;
+  width: 2em;
+  cursor: pointer;
+}
+
+#slideLeft:hover,
+#slideRight:hover {
+  width: 2.5em;
+}
+
+/* Text in between lines styling */
+#expertiseHeader {
+  overflow: hidden;
+  text-align: center;
+}
+
+#expertiseHeader:before,
+#expertiseHeader:after {
+  background-color: #C7E9B0;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+#expertiseHeader:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#expertiseHeader:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
