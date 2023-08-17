@@ -35,22 +35,16 @@ function education() {
     document.getElementById("workButton").style.backgroundColor = "#C7E9B0";
 }
 
-// Expertise JavaScript Code
-
-const buttonRight = document.getElementById("slideRight");
-const buttonLeft = document.getElementById("slideLeft");
-
-buttonRight.onclick = function () {
-  //   document.getElementById('skill-set').scrollLeft += 20;
-  document.getElementById("skill-set").scrollBy({
-    left: 250,
+function slideRight(idName) {
+  document.getElementById(idName).scrollBy({
+    left: 400,
     behavior: "smooth",
   });
-};
-buttonLeft.onclick = function () {
-  //   document.getElementById('skill-set').scrollLeft -= 20;
-  document.getElementById("skill-set").scrollBy({
-    left: -250,
+}
+
+function slideLeft(idName) {
+  document.getElementById(idName).scrollBy({
+    left: -400,
     behavior: "smooth",
   });
-};
+}

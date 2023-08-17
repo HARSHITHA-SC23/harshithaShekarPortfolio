@@ -67,7 +67,7 @@
   content: "";
   display: inline-block;
   height: 3px;
-  position: relative;
+  /* position: relative; */
   vertical-align: middle;
   width: 50%;
 }

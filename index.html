@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="qualification.css">
     <link rel="stylesheet" href="expertise.css">
+    <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <div id="rightMenu">
             <a href="#qualificationSection" onclick="topBarResponsive()">QUALIFICATION</a>
             <a href="#expertiseSection" onclick="topBarResponsive()">EXPERTISE</a>
-            <a href="#experienceSection" onclick="topBarResponsive()">PROJECT</a>
+            <a href="#projectSection" onclick="topBarResponsive()">PROJECT</a>
             <a href="#experienceSection" onclick="topBarResponsive()">CONTACT</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="topBarResponsive()">&#9776;</a>
@@ -69,19 +70,19 @@
                     <div id="workLayoutContent"">
                         <h3>2021-09-Present</h3>
                         <div class=" vl"></div>
-                        <p>Full Stack Developer I<br />
-                            <span style="color: #323232a2;">NewWave India Technologies LLP</span>
-                        </p>
-                    </div>
-                    <div id="workLayoutContent"">
+                    <p>Full Stack Developer I<br />
+                        <span style="color: #323232a2;">NewWave India Technologies LLP</span>
+                    </p>
+                </div>
+                <div id="workLayoutContent"">
                         <h3>2021-05 - 2021-09</h3>
                         <div class=" vl"></div>
-                        <p><span>Full Stack Web Developer Intern</span><br />
-                            <span style="color: #323232a2;">NewWave India Technologies LLP</span>
-                        </p>
-                    </div>
-                </div>
+                <p><span>Full Stack Web Developer Intern</span><br />
+                    <span style="color: #323232a2;">NewWave India Technologies LLP</span>
+                </p>
             </div>
+        </div>
+        </div>
         </div>
         <div id="eduContent">
             <div id="workLayout">
@@ -89,33 +90,34 @@
                     <div id="workLayoutContent"">
                         <h3>2017-08 - 2021-08</h3>
                         <div class=" vl"></div>
-                        <p>Information Science and Engineering, BE<br />
-                            <span style="color: #323232a2;">NIE Institute of technology, Mysore, Karnataka</span>
-                        </p>
-                    </div>
-                    <div id="workLayoutContent"">
+                    <p>Information Science and Engineering, BE<br />
+                        <span style="color: #323232a2;">NIE Institute of technology, Mysore, Karnataka</span>
+                    </p>
+                </div>
+                <div id="workLayoutContent"">
                         <h3>2015-07 - 2017-05</h3>
                         <div class=" vl"></div>
-                        <p><span>PCMC (Science) , Pre-University Course (PUC)</span><br />
-                            <span style="color: #323232a2;">Sadvidya Composite PU College, Mysore, Karnataka</span>
-                        </p>
-                    </div>
-                    <div id="workLayoutContent"">
+                <p><span>PCMC (Science) , Pre-University Course (PUC)</span><br />
+                    <span style="color: #323232a2;">Sadvidya Composite PU College, Mysore, Karnataka</span>
+                </p>
+            </div>
+            <div id="workLayoutContent"">
                         <h3>2014-07 - 2015-05</h3>
                         <div class=" vl"></div>
-                        <p><span>SSLC , KSEEB</span><br />
-                            <span style="color: #323232a2;">Sacred Heart English Medium School, Shanivarsanthe,</span>
-                        </p>
-                    </div>
-                </div>
-            </div></div>
+            <p><span>SSLC , KSEEB</span><br />
+                <span style="color: #323232a2;">Sacred Heart English Medium School, Shanivarsanthe,</span>
+            </p>
+        </div>
+        </div>
+        </div>
+        </div>
     </section>
     <section class="expertise" id="expertiseSection">
         <div>
             <h1 id="expertiseHeader">EXPERTISE</h1>
         </div>
         <div id="skill-container">
-            <button id="slideLeft">
+            <button id="slideLeft" onclick="slideLeft('skill-set')">
                 <img src="assets/backward.svg" />
             </button>
             <div id="skill-set">
@@ -192,13 +194,70 @@
                     <p id="subContent">Responsive Website</p>
                 </div>
             </div>
-            <button id="slideRight">
+            <button id="slideRight" onclick="slideRight('skill-set')">
                 <img src="assets/forward.svg" />
             </button>
         </div>
     </section>
-    <section class="experience" id="experienceSection">
-        <H1>PROJECT</H1>
+    <section class="project" id="projectSection">
+        <div id="project-container">
+            <button id="slideLeft" onclick="slideLeft('project-set')">
+                <img src="assets/backward.svg" />
+            </button>
+            <div id="project-set">
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+                <div id="item">
+                    <h1>Slide 2</h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
+                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
+                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                </div>
+            </div>
+            <button id="slideRight" onclick="slideRight('project-set')">
+                <img src="assets/forward.svg" />
+            </button>
+        </div>
     </section>
     <section class="experience" id="experienceSection">
         <H1>CONTACT</H1>
