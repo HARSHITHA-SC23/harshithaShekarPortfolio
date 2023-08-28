@@ -20,7 +20,7 @@ body {
 }
 
 .topBar {
-    height: 110px;
+    height: 90px;
     background-color: black;
     display: flex;
     justify-content: space-between;
