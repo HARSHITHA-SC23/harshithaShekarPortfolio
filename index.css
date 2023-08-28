@@ -13,7 +13,8 @@ body {
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #C7E9B0;
+        background: rgb(139,180,255);
+        background: linear-gradient(7deg, rgba(139,180,255,1) 32%, rgba(215,176,233,1) 100%);
         border-radius: 10px;
     }
 }

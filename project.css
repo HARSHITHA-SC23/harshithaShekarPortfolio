@@ -1,0 +1,57 @@
+.project {
+    margin: 4%;
+    font-family: 'Inter', sans-serif;
+    overflow-x: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 18px;
+}
+
+th {
+    background-color: black;
+    color: #C7E9B0;
+}
+
+p {
+    width: 25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+p:hover {
+    white-space:normal;
+    text-align: justify;
+}
+
+.demoLink{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+li {
+    background: rgb(139,180,255);
+    background: linear-gradient(7deg, rgba(139,180,255,1) 32%, rgba(215,176,233,1) 100%);
+    padding: 0.3em;
+    border-radius: 30px;
+    margin-top: 5%;
+    width: fit-content;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+tr:nth-child(even) {
+    background-color: #C7E9B0;
+}
