@@ -34,7 +34,7 @@ p:hover {
     text-align: justify;
 }
 
-a{
+.demoLink{
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
